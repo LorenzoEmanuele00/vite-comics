@@ -3,3 +3,10 @@
     justify-content: $just;
 
 }
+
+@mixin flex-full($dir, $just, $ali-i) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $ali-i;
+}
