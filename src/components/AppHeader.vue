@@ -60,7 +60,7 @@
 </script>
 
 <template>
-    <header>
+    <header class="container">
         <div>
             <img src="../assets/img/dc-logo.png" alt="DC Logo">
         </div>
@@ -77,8 +77,11 @@
 @use "../style/partials/variables" as *;
 
     header {
-        @include flex(space-around);
-        padding: 20px;
+        @include flex(space-between);
+
+        img {
+            padding: 20px;
+        }
 
         ul {
             display: flex;
@@ -96,15 +99,15 @@
                 }
 
                 &:hover {
-                    border-bottom: 3px solid $primary;
-                    padding-top: 3px;
+                    border-bottom: 5px solid $primary;
+                    padding-top: 5px;
                     a {
                         color: $primary;
                     }
                 }
                 &.active {
-                    border-bottom: 3px solid $primary;
-                    padding-top: 3px;
+                    border-bottom: 5px solid $primary;
+                    padding-top: 5px;
                     a {
                         color: $primary;
                     }

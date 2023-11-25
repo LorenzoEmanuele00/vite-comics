@@ -4,9 +4,10 @@
 
 }
 
-@mixin flex-full($dir, $just, $ali-i) {
+@mixin flex-full($dir, $just, $ali-i, $wrap: nowrap) {
     display: flex;
     flex-direction: $dir;
     justify-content: $just;
     align-items: $ali-i;
+    flex-wrap: $wrap;
 }
