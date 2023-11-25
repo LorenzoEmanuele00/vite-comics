@@ -5,11 +5,11 @@
                 navNames: [
                     {
                         name: "CHARACTER",
-                        isActive: true,
+                        isActive: false,
                     },
                     {
                         name: "COMICS",
-                        isActive: false,
+                        isActive: true,
                     },
                     {
                         name: "MOVIES",
@@ -44,7 +44,7 @@
                         isActive: false,
                     }
                 ],
-                activeIndex: 0,
+                activeIndex: 1,
             }
         },
         methods: {

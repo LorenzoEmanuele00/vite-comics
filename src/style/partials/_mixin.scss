@@ -1,10 +1,9 @@
 @mixin flex($just) {
     display: flex;
     justify-content: $just;
-
 }
 
-@mixin flex-full($dir, $just, $ali-i, $wrap: nowrap) {
+@mixin flex-full($dir, $just, $ali-i, $wrap: wrap) {
     display: flex;
     flex-direction: $dir;
     justify-content: $just;
